@@ -143,12 +143,12 @@ const Row2 = () => {
               83
             </Typography>
             <Typography variant="h6">
-              Finance goals of the campaign that is desired
+              Finance goals of the campaign that is desired.
             </Typography>
           </Box>
           <Box flexBasis="40%">
             <Typography variant="h5">Losses in Revenue</Typography>
-            <Typography variant="h6">Losses are down 25%</Typography>
+            <Typography variant="h6">Losses are down 25%.</Typography>
             <Typography mt="0.4rem" variant="h5">
               Profit Margins
             </Typography>
