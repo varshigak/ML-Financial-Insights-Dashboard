@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import BoxHeader from "@/components/BoxHeader";
 import DashboardBox from "@/components/DashboardBox";
 import FlexBetween from "@/components/FlexBetween";
@@ -9,12 +8,13 @@ import {
 } from "@/state/api";
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid, GridCellParams } from "@mui/x-data-grid";
-import { useMemo } from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import React, { useMemo } from "react";
+import { Cell, Pie, PieChart } from "recharts";
 
 const Row3 = () => {
   const { palette } = useTheme();
   const pieColors = [palette.primary[800], palette.primary[500]];
+
   const { data: kpiData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
   const { data: transactionData } = useGetTransactionsQuery();
@@ -94,7 +94,7 @@ const Row3 = () => {
         />
         <Box
           mt="0.5rem"
-          p=" 0 0.5rem"
+          p="0 0.5rem"
           height="75%"
           sx={{
             "& .MuiDataGrid-root": {
@@ -107,7 +107,7 @@ const Row3 = () => {
             "& .MuiDataGrid-columnHeaders": {
               borderBottom: `1px solid ${palette.grey[800]} !important`,
             },
-            "& .MuiDataGrid-columnSeperator": {
+            "& .MuiDataGrid-columnSeparator": {
               visibility: "hidden",
             },
           }}
@@ -128,7 +128,7 @@ const Row3 = () => {
         />
         <Box
           mt="1rem"
-          p=" 0 0.5rem"
+          p="0 0.5rem"
           height="80%"
           sx={{
             "& .MuiDataGrid-root": {
@@ -141,7 +141,7 @@ const Row3 = () => {
             "& .MuiDataGrid-columnHeaders": {
               borderBottom: `1px solid ${palette.grey[800]} !important`,
             },
-            "& .MuiDataGrid-columnSeperator": {
+            "& .MuiDataGrid-columnSeparator": {
               visibility: "hidden",
             },
           }}
@@ -155,10 +155,9 @@ const Row3 = () => {
           />
         </Box>
       </DashboardBox>
-
       <DashboardBox gridArea="i">
         <BoxHeader title="Expense Breakdown By Category" sideText="+4%" />
-        <FlexBetween mt="0.5rem" gap="0.5rem" p="0.1rem" textAlign="center">
+        <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
           {pieChartData?.map((data, i) => (
             <Box key={`${data[0].name}-${i}`}>
               <PieChart width={110} height={100}>
@@ -180,7 +179,6 @@ const Row3 = () => {
           ))}
         </FlexBetween>
       </DashboardBox>
-
       <DashboardBox gridArea="j">
         <BoxHeader
           title="Overall Summary and Explanation Data"
