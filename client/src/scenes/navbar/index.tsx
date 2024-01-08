@@ -1,14 +1,11 @@
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState("dashboard");
 
