@@ -13,7 +13,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Demo][product-screenshot]]
+| Dashboard | Revenue & Predictions |
+| ------------- | ------------- |
+| ![Screenshot of Dashboard](https://github.com/varshigak/ML-Financial-Insights-Dashboard/assets/142120820/67754fda-4bd8-490f-815f-cc7c39a7b5c3) | ![Screenshot of Predictions](https://github.com/varshigak/ML-Financial-Insights-Dashboard/assets/142120820/18f81050-fb55-419d-8846-51b804c71199) |
 
 The Finance Dashboard App with Machine Learning Predictions is a comprehensive web application that provides real-time financial data and incorporates a linear regression model to predict revenue. 
 
