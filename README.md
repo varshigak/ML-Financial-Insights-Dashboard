@@ -11,7 +11,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the Project
 
 | Dashboard | Revenue & Predictions |
 | ------------- | ------------- |
