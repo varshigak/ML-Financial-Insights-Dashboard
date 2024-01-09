@@ -65,7 +65,7 @@ To get started with this project, you can either clone the repository or access 
 You can clone this repository using the following command:
 
 ```sh
-git clone https://github.com/your_username/project-name.git
+git clone https://github.com/varshigak/ML-Financial-Insights-Dashboard.git
 ```
 
 ### Access Live Link
