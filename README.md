@@ -71,7 +71,7 @@ git clone https://github.com/varshigak/ML-Financial-Insights-Dashboard.git
 ### Access Live Link
 You can access the live demo of this project by following this link: https://ml-fin-dash.netlify.app/
 
-## Usage
+## Purpose
 The Finance Dashboard App can be used for various financial applications, including:
 
 * Monitoring real-time financial data.
